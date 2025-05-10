@@ -29,6 +29,7 @@ If you find this work useful, please cite:
   howpublished = {\url{https://github.com/jaketobrien/ASTRIS}},
   note         = {Open-source framework for spacecraft rendezvous simulation}
 }
+```
 
 ## Summary
 
