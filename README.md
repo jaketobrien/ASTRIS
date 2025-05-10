@@ -26,13 +26,18 @@ If you find this work useful, please cite:
   title        = {ASTRIS: Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation},
   year         = {2025},
   howpublished = {\url{https://github.com/jaketobrien/ASTRIS}},
-  note         = {Open-source framework for spacecraft rendezvous simulation}
+  note         = {Open-source framework for autonomous spacraft navigation simulation}
 }
 ```
 
 ## Summary
 
 INFO AND IMAGE
+
+![NR_CV_Pipeline](https://github.com/user-attachments/assets/4a08967b-0485-4ecb-b144-e5d68adc048f)
+
+
+![TR_Pipeline](https://github.com/user-attachments/assets/a05b323b-ec30-46f5-a83e-fc31f56334ea)
 
 ## Setup
 
