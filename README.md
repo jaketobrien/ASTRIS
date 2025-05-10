@@ -21,7 +21,7 @@ The open-source material includes the following:
 
 If you find this work useful, please cite:
 
-<pre> ```bibtex @misc{obrien2025astris, author = {Jake O'Brien}, title = {ASTRIS: Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation}, year = {2025}, howpublished = {\url{https://github.com/jaketobrien/ASTRIS}}, note = {Open-source framework for spacecraft rendezvous simulation} } ``` </pre>
+```bibtex @misc{obrien2025astris, author = {Jake O'Brien}, title = {ASTRIS: Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation}, year = {2025}, howpublished = {\url{https://github.com/jaketobrien/ASTRIS}}, note = {Open-source framework for spacecraft rendezvous simulation} } ```
 
 ## Summary
 
