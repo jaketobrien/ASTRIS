@@ -1,6 +1,8 @@
 # ASTRIS - Autonmous Spacecraft Testing via Rendezvous, Imaging and Simulation
 
-![Pose_Pred](https://github.com/user-attachments/assets/5d9ab63b-c2a0-4dde-9752-fd47cebc96dd)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5d9ab63b-c2a0-4dde-9752-fd47cebc96dd" width="600" alt="Pose_Pred">
+</p>
 
 
 ASTRIS is an open-source methodology with open-source material to conduct simulated closed-loop autonomous spaceraft navigation with hardware-in-the-loop, model-in-the-loop, and sofware-in-the-loop.
@@ -19,7 +21,13 @@ The open-source material includes the following:
 
 If you find this work useful, please cite:
 
-COPIABLE BOX WITH CITATION
+@misc{obrien2025astris,
+  author = {Jake O'Brien},
+  title = {ASTRIS: Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation},
+  year = {2025},
+  howpublished = {\url{https://github.com/jaketobrien/ASTRIS}},
+  note = {Open-source framework for spacecraft rendezvous simulation}
+}
 
 ## Summary
 
