@@ -53,7 +53,7 @@ The NR Compter Vision (CV) pipeline for 6DoF pose estimation. Input images of si
 
 ### Terminal Range
 
-The TR CV pipeline for 6DoF pose estimation. This pipeline operates the exact same way as the NR CV pipeline, except it bypasses the SDN because the target is close enough to not need any detaction or cropping.
+The TR CV pipeline for 6DoF pose estimation. This pipeline operates the exact same way as the NR CV pipeline, except it bypasses the SDN because the target is close enough to not need any detection or cropping.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a05b323b-ec30-46f5-a83e-fc31f56334ea" width="1000" alt="TR_CV_Pipeline">
@@ -61,12 +61,9 @@ The TR CV pipeline for 6DoF pose estimation. This pipeline operates the exact sa
 
 ## Setup
 
-This section contains the instructions to execute the code. The repository has been tested in a closed-loop system using a Nvidia Jetson Orin NX. The ONX was setup with the following:
+This section contains the instructions to setup and execute the system. The repository has been tested in a closed-loop system using a Nvidia Jetson Orin NX (ONX). The ONX was setup with Ubuntu 20.04 and JetPack 5.1.2.
 
-\bulletpoint: Jetpack X
-......
-
-This system leevrages the GPU capabilities of the ONX, with the insatllation guide available in ONX_Install.MD
+This system leevrages the GPU capabilities of the ONX, with the insatllation guide available in ONX_Install.MD.
 
 ### Datasets
 
@@ -78,6 +75,8 @@ There are two datsets available:
 The Spacecraft Target Acquisition and Regression Datasets (STARDATA) have two variants being Near Range (denoted by NR) and Terminal Rnage (denoted by TR). Please refer to the paper for details about the dataset.
 
 They are availbale through the following link: https://drive.google.com/drive/folders/1SKCJRe-ErgxVThGT8_DB7IGoR4GdR7Un?usp=drive_link     PUT THIS LINK INTO THE WORDS STARDATA datasets.
+
+
 
 ### Clone Repository
 
