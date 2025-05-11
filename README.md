@@ -1,7 +1,7 @@
 # ASTRIS - Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8045ff3e-6ddb-491d-91a2-d8c149116c19" width="1000" alt="Pose_Pred">
+  <img src="https://github.com/user-attachments/assets/8045ff3e-6ddb-491d-91a2-d8c149116c19" width="1000" alt="Pose_Pred_Vis">
 </p>
 
 ASTRIS is an open-source framework with open-source material to conduct simulated closed-loop autonomous spaceraft navigation with hardware-in-the-loop, model-in-the-loop, and sofware-in-the-loop.
@@ -30,14 +30,34 @@ If you find this work useful, please cite:
 }
 ```
 
-## Summary
+## Overview
 
-INFO AND IMAGE
+This open-source framework combines a spacecraft CAD model, accompanying datasets, a tailored control system, and mission design simulation to validate a complete 6DoF pose estimation pipeline for uncooperative rendezvous scenarios. Existing studies tend to address individual components, such as pose estimation algorithms, synthetic dataset generation, control systems, or mission simulation, in isolation. In cases where integrated solutions do exist, they are typically closed-source and proprietary. This research bridges these gaps by presenting a unified, reproducible, and accessible framework, representing a significant advancement in the development and testing of Autonomous Spacecraft Navigation (ASN) systems. By making the full pipeline methodology open-source and releasing eligible components for public access, this work aims to accelerate research progress and promote accessibility for future innovation in the field. This open-source framework is named ASTRIS.
 
-![NR_CV_Pipeline](https://github.com/user-attachments/assets/4a08967b-0485-4ecb-b144-e5d68adc048f)
+Within this 6DoF pose estimation pipeline evaluation, there are two networks; the Spacecraft Detection Network (SDN) and the Keypoint Regression Network (KRN). These are used depending on the phase of the simualted mission. This simulated mission has four phases with their relative distance forom the target spacraft:
 
+bulletpoint: Far Range (>200m)
+bulletpoint: Near Range (200m to 10m)
+bulletpoint: Terminal Range (10m to 3m)
+bulletpoint: Docking (3m to 0m)
 
-![TR_Pipeline](https://github.com/user-attachments/assets/a05b323b-ec30-46f5-a83e-fc31f56334ea)
+The focus is on the Near Range (NR) and Terminal Range (TR) in this framework.
+
+### Near Range 
+
+The NR Compter Vision (CV) pipeline for 6DoF pose estimation. Input images of size 1024x1024 pixels are passed to the SDN, which detects the target and crops the image to 640x640 from the bounding box center point. This cropped image is inputted to the KRN, which predicts 2D keypoints corresponding to the target spacecraft's key features. These keypoints are matched with a known 3D wireframe model of the target, and the pose is estimated using the EPnP algorithm with RANSAC for outlier rejection. A Kalman filter is then applied to refine the pose by smoothing temporal noise and ensuring consistency across frames. The final output is a 6D pose of the target.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4a08967b-0485-4ecb-b144-e5d68adc048f" width="1000" alt="NR_CV_Pipeline">
+</p>
+
+### Terminal Range
+
+The TR CV pipeline for 6DoF pose estimation. This pipeline operates the exact same way as the NR CV pipeline, except it bypasses the SDN because the target is close enough to not need any detaction or cropping.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a05b323b-ec30-46f5-a83e-fc31f56334ea" width="1000" alt="TR_CV_Pipeline">
+</p>
 
 ## Setup
 
