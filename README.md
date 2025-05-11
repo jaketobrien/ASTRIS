@@ -36,10 +36,10 @@ This open-source framework combines a spacecraft CAD model, accompanying dataset
 
 Within this 6DoF pose estimation pipeline evaluation, there are two networks; the Spacecraft Detection Network (SDN) and the Keypoint Regression Network (KRN). These are used depending on the phase of the simualted mission. This simulated mission has four phases with their relative distance forom the target spacraft:
 
-bulletpoint: Far Range (>200m)
-bulletpoint: Near Range (200m to 10m)
-bulletpoint: Terminal Range (10m to 3m)
-bulletpoint: Docking (3m to 0m)
+- Far Range (>200 m)
+- Near Range (200 m to 10 m)
+- Terminal Range (10 m to 3 m)
+- Docking (3 m to 0 m)
 
 The focus is on the Near Range (NR) and Terminal Range (TR) in this framework.
 
