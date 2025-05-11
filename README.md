@@ -84,9 +84,9 @@ COPIABLE ADDRESS
 
 In PoseEstimation. the pre-trained YOLO11s.pt model is avaible (trained on STARDATA-NR). Inside PoseEstimation/tools/, the following are available:
 
-- Training script.
-- Validation script with pose metrics.
-- Live pose estimation script.
+- Training script (dist_train.py).
+- Validation script with pose metrics (Val_PoseMetrics.py).
+- Live pose estimation script (PE_FullMission.py).
 
 The pre-trained HigherHRNet (trained on STARDATA-TR) model can be found in PoseEstimation/output/coco_kpy/pose_higher_hrnet/w32_640_adam_lr1e-3/. This PoseEstimation folder is based off the COCO-based HigherHRNet strcuture and as a result retains the same structure and functionality.
 
@@ -94,7 +94,7 @@ In Orchestrator, the Main_ControlSystem_Tx.py script is the script that interfac
 
 ### Simulator
 
-This work used Black Swan's Mission Design Simulator 0.8.3, which is availble through their [website](https://www.blackswan.ltd/mission-design-simulator/).
+This work used Black Swan's Mission Design Simulator 0.8.3, which is availble through their [website](https://blackswanspace.com/mission-design-simulator/).
 
 ### CAD Model
 
@@ -107,4 +107,6 @@ The package comes with an accompanying satellite, but this can be deleted. Tango
 
 The 3D keypoints for this specific model and camera intrinsics are available in PoseEstimation/tools/.
 
-DISCUSS SETUP FURTHER
+## Summary
+
+These are all the fundamental parts of the ASTRIS framework. Once the simaultor is configured with Main_ControlSystem_Tx.py on an external PC which is connected to the ONX via Ethernet, PE_FullMission.py is executed from the ONX and opens a RTP conection. When the connection is accepted on the external PC, the simulator begins, the frames start being transmitetd, and the CV and control system begin operation.
