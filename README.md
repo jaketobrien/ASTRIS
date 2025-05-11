@@ -1,4 +1,4 @@
-# ASTRIS - Autonmous Spacecraft Testing via Rendezvous, Imaging and Simulation
+# ASTRIS - Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8045ff3e-6ddb-491d-91a2-d8c149116c19" width="1000" alt="Pose_Pred">
