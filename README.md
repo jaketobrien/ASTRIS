@@ -72,11 +72,9 @@ There are two datsets available:
 - STARDATA-NR.
 - STARDATA-TR.
 
-The Spacecraft Target Acquisition and Regression Datasets (STARDATA) have two variants being Near Range (denoted by NR) and Terminal Rnage (denoted by TR). Please refer to the paper for details about the dataset.
+The Spacecraft Target Acquisition and Regression Datasets (STARDATA) have two variants being Near Range (denoted by NR) and Terminal Rnage (denoted by TR). Please refer to the paper (coming soon) for details about the dataset.
 
-They are availbale through the following link: https://drive.google.com/drive/folders/1SKCJRe-ErgxVThGT8_DB7IGoR4GdR7Un?usp=drive_link     PUT THIS LINK INTO THE WORDS STARDATA datasets.
-
-
+They are available through the following link: [STARDATA datasets](https://drive.google.com/drive/folders/1SKCJRe-ErgxVThGT8_DB7IGoR4GdR7Un?usp=drive_link).
 
 ### Clone Repository
 
@@ -84,29 +82,29 @@ Clone the repository using the following:
 
 COPIABLE ADDRESS
 
-In PoseEstimation. the pre-trained YOLO11s.pt model is avaible (trained on STARDATA-NR). Inside PoseEstimation/tools/, the follwoing are available:
+In PoseEstimation. the pre-trained YOLO11s.pt model is avaible (trained on STARDATA-NR). Inside PoseEstimation/tools/, the following are available:
 
-MAKE BULLETPOINTS:
 - Training script.
 - Validation script with pose metrics.
 - Live pose estimation script.
 
-The pre-trained HigherHRNet (trained on STARDATA-TR) model can be found in PoseEstimation/output/... This folder is based off the COCO-based HigherHRNet strcuture adn as a result has the same structure and functionality.
+The pre-trained HigherHRNet (trained on STARDATA-TR) model can be found in PoseEstimation/output/coco_kpy/pose_higher_hrnet/w32_640_adam_lr1e-3/. This PoseEstimation folder is based off the COCO-based HigherHRNet strcuture and as a result retains the same structure and functionality.
 
 In Orchestrator, the Main_ControlSystem_Tx.py script is the script that interfaces with the simulator and forms a closed-loop connection with teh receiver. It also hosts the 6DoF PID controller.
 
 ### Simulator
 
-This work used Black Swan's Mission Design Simulator 0.8.2, which is availble through their website.
+This work used Black Swan's Mission Design Simulator 0.8.3, which is availble through their [website](https://www.blackswan.ltd/mission-design-simulator/).
 
 ### CAD Model
 
-The target spacercaft, which was used to geenarte the datasets, is a representation of the Tango satellite. It can be acquired from a {private designer} PUT LINK IN TWO WORDS.
+The target spacercaft, which was used to geenarte the datasets, is a representation of the Tango satellite. It can be acquired from an [independent designer](https://www.cgtrader.com/3d-models/space/other/satellites-mango-and-tango).
 
-The package comes with an accompanying satellite, but this can be deleted. Tango was then flipped 90 degrees about its X-axis and centered. As you can see in the code, the following transforms must be made before keypoint projection:
+The package comes with an accompanying satellite, but this can be deleted. Tango was then flipped 90 degrees about its X-axis and centered. As you can see in the code, the following transforms must be made before keypoint projection as a result of this and going from the Unity envrinoment to OpenCV:
 
-TRANSFORMS.
+- Axis Permutation: (1,2,0)
+- Sign Flip: (−1, 1, 1)
 
-The 3D keypoints for this specific model are available in PoseEstimation/tools/.
+The 3D keypoints for this specific model and camera intrinsics are available in PoseEstimation/tools/.
 
 DISCUSS SETUP FURTHER
