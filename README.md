@@ -57,6 +57,8 @@ There are two datsets available:
 
 The Spacecraft Target Acquisition and Regression Datasets (STARDATA) have two variants being Near Range (denoted by NR) and Terminal Rnage (denoted by TR). Please refer to the paper for details about the dataset.
 
+They are availbale through the following link: https://drive.google.com/drive/folders/1SKCJRe-ErgxVThGT8_DB7IGoR4GdR7Un?usp=drive_link     PUT THIS LINK INTO THE WORDS STARDATA datasets.
+
 ### Clone Repository
 
 Clone the repository using the following:
