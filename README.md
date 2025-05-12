@@ -80,7 +80,9 @@ They are available through the following link: [STARDATA datasets](https://drive
 
 Clone the repository using the following:
 
-COPIABLE ADDRESS
+```
+git clone https://github.com/jaketobrien/ASTRIS.git
+```
 
 In PoseEstimation. the pre-trained YOLO11s.pt model is avaible (trained on STARDATA-NR). Inside PoseEstimation/tools/, the following are available:
 
