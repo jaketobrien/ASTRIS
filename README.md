@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/885f0fdb-68cd-42da-bd64-5cbb78a5c14e" width="1000" alt="ASTRIS_Short">
 </p>
 
-ASTRIS is an open-source framework with open-source material to conduct simulated closed-loop autonomous spaceraft navigation with hardware-in-the-loop, model-in-the-loop, and sofware-in-the-loop.
+ASTRIS is an open-source framework with open-source material to conduct simulated closed-loop autonomous spacecraft navigation with hardware-in-the-loop, model-in-the-loop, and software-in-the-loop.
 
 The open-source material includes the following:
 
