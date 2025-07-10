@@ -98,7 +98,9 @@ In Orchestrator, the Main_ControlSystem_Tx.py script is the script that interfac
 
 ### Simulator
 
-This work used Black Swan's Mission Design Simulator 0.8.3, which is availble through their [website](https://blackswanspace.com/mission-design-simulator/).
+This work used Black Swan's Mission Design Simulator version 0.8.3, which is unfortunately no longer available throough their website. They have an updated similator which this should work with, but it is untested. Please find the simulator through their [website](https://blackswanspace.com/mission-design-simulator/).
+
+If you wish to use version 0.8.3, as used in this application, please reach out to Black Swan to request the specific version.
 
 ### CAD Model
 
