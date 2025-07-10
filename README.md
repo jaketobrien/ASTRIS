@@ -30,7 +30,7 @@ If you find this work useful, please cite:
 }
 ```
 
-Paper submitted for publication. Pending approval.
+Paper accepted to IMVIP 2025. Pending publication.
 
 ## Overview
 
