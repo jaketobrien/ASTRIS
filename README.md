@@ -43,6 +43,10 @@ Within this 6DoF pose estimation pipeline evaluation, there are two networks; th
 - Terminal Range (10 m to 3 m)
 - Docking (3 m to 0 m)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/30d6d099-508f-4139-b3c0-2c70fdc5c43f" width="1000" alt="MissionPlan">
+</p>
+
 The focus is on the Near Range (NR) and Terminal Range (TR) in this framework.
 
 ### Near Range 
