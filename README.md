@@ -21,12 +21,11 @@ The open-source material includes the following:
 If you find this work useful, please cite:
 
 ```bibtex
-@misc{obrien2025astris,
-  author       = {Jake O'Brien},
-  title        = {ASTRIS: Autonomous Spacecraft Testing via Rendezvous, Imaging and Simulation},
-  year         = {2025},
-  howpublished = {\url{https://github.com/jaketobrien/ASTRIS}},
-  note         = {Open-source framework for autonomous spacraft navigation simulation}
+@article{o2025closed,
+  title={A Closed-Loop Vision System Framework for Autonomous Spacecraft Rendezvous},
+  author={O’Brien, Jake and Lacey, Gerard and Murphy, James},
+  journal={IMVIP 2025},
+  pages={244}
 }
 ```
 
