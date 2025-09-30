@@ -21,12 +21,17 @@ The open-source material includes the following:
 If you find this work useful, please cite:
 
 ```bibtex
-@article{o2025closed,
+@inproceedings{o2025closed,
   title={A Closed-Loop Vision System Framework for Autonomous Spacecraft Rendezvous},
   author={O’Brien, Jake and Lacey, Gerard and Murphy, James},
-  journal={IMVIP 2025},
-  pages={244}
+  booktitle={Proceedings of the Irish Machine Vision and Image Processing Conference 2025},
+  pages={244},
+  year={2025},
+  publisher={Irish Pattern Recognition and Classification Society},
+  address={Ulster University, Derry, Northern Ireland},
+  isbn={978-0-9934207-9-5}
 }
+
 ```
 
 Paper accepted to IMVIP 2025. Pending publication.
