@@ -34,8 +34,6 @@ If you find this work useful, please cite:
 
 ```
 
-Paper accepted to IMVIP 2025. Pending publication.
-
 ## Overview
 
 This open-source framework combines a spacecraft CAD model, accompanying datasets, a tailored control system, and mission design simulation to validate a complete 6DoF pose estimation pipeline for uncooperative rendezvous scenarios. Existing studies tend to address individual components, such as pose estimation algorithms, synthetic dataset generation, control systems, or mission simulation, in isolation. In cases where integrated solutions do exist, they are typically closed-source and proprietary. This research bridges these gaps by presenting a unified, reproducible, and accessible framework, representing a significant advancement in the development and testing of Autonomous Spacecraft Navigation (ASN) systems. By making the full pipeline methodology open-source and releasing eligible components for public access, this work aims to accelerate research progress and promote accessibility for future innovation in the field. This open-source framework is named ASTRIS.
